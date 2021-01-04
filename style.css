@@ -20,4 +20,6 @@ nav{
     padding: 0 35px;
     text-decoration: none;
 }
-
+#social img{
+    width: 32px;
+}
