@@ -14,29 +14,33 @@ nav{
 
 }
 #logo img {
-    width: 50px;
+    width: 800px;
+    object-fit: cover;
 }
 #link a {
-    padding: 0 35px;
+    padding: 0 50px;
     text-decoration: none;
+    font-weight: 900;
+    color: #999;
+    transition: 0.5s;
+    border: 0;
 }
-#social img{
-    width: 32px;
+#link a hover{
+    color: #ecc89f;
+    border: 5px #e2b375;
 }
-
-#products {
- width: 1280px;
- margin: 0 auto;
+#product {
+    width: 1280px;
+    margin: 0 auto;
 }
-
 #products > div {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  margin-top: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 20px;
 }
 #products .pic img {
-    width:100%;
-    height:350px;
+    width: 80%;
+    height:550px;
     object-fit: cover;
 }
 #products .text {
@@ -55,6 +59,8 @@ padding: 30px 0;
     grid-template-areas: "pic text";
     grid-template-columns: 60% 40%;
 }
+
+
 #products > div:nth-child(even) {
     background: #bb8a6e;
 
@@ -70,17 +76,22 @@ padding: 30px 0;
 .button {
     padding: 8px 50px;
     border: 1px solid #57380f;
-grid-template-columns: repeat(3,1fr);
-grid-gap: 15px;
-width: 1280px;
-margin: 50px auto 0;
+    text-decoration: none;
+    color: #57380f;
+    transition: 0.5s;
 }
+ .button:hover {
+     background: #57380f;
+     color: antiquewhite;
+ }
+ #info { 
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 15px;
+  width: 1280px;
+  margin: 50px auto 0;
+ }
 
-#info .pic img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-}
 #info .text {
  padding: 0 10px;
 }
