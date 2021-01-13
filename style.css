@@ -14,7 +14,7 @@ nav{
 
 }
 #logo img {
-    width: 800px;
+    width: 80px;
     object-fit: cover;
 }
 #link a {
@@ -25,11 +25,42 @@ nav{
     transition: 0.5s;
     border: 0;
 }
-#link a hover{
+#social img {
+    width: 100px;
+}
+#link a:hover{
     color: #ecc89f;
     border: 5px #e2b375;
 }
-#product {
+/* 首頁 */
+#banner > div {
+    height: 100vh;
+}
+.banner1 {
+background-image: url(./img/banner1.jpg);
+}
+
+.banner2 {
+ background-image: url(./img/banner2.jpg);
+ }
+
+.banner3 {
+ background-image: url(./img/banner3.jpg);
+ }
+
+#banner {
+     text-align: center;
+     color: #ecc89f ;
+ }
+#banner h1 {
+    padding: 30px;
+    margin-top: 200px;
+    font-size: 120px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+#products {
     width: 1280px;
     margin: 0 auto;
 }
@@ -102,4 +133,57 @@ padding: 30px 0;
 #info .text p{
  padding: 10px 0 25px;
  line-height: 2;
+}
+#service {
+    width: 1280px;
+    margin: 0 auto;
+}
+#serice img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+footer {
+    background: saddlebrown;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+}
+#footer-social a {
+    padding: 0 20px;
+}
+#starbucks {
+    padding: 30px 0 20PX;
+}
+
+#starbucks {
+    transition: 0.5s;
+}
+#starbucks img {
+    transform: scale(1.2);
+}
+
+#footer-link {
+    padding: 20px 0;
+
+}
+#footer-link a {
+color: #664e22;
+text-decoration: none;
+padding: 0 20px;
+transition: 0.5s;
+}
+
+#footer-link a :hover {
+    color: #d88d91;
+}
+#contact {
+    color: #963d22;
+    font-size: 10px;
+    padding: 10px 0;
+}
+#copy {
+    color: #bb8a6e);
+    font-size: 8px;
 }
