@@ -11,8 +11,14 @@ nav{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     padding: 20px 30px;
     align-items: center;
-
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.9;
 }
+
+
 #logo img {
     width: 80px;
     object-fit: cover;
@@ -25,8 +31,7 @@ nav{
     transition: 0.5s;
     border: 0;
 }
-#social img {
-    width: 100px;
+
 }
 #link a:hover{
     color: #ecc89f;
@@ -58,6 +63,15 @@ background-image: url(./img/banner1.jpg);
     font-size: 120px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 
+}
+banner p {
+    padding: 30px;
+    font-size: 32px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+banner hr {
+    width: 80%;
+    margin: 0 auto;
 }
 
 #products {
