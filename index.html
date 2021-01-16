@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <!-- 最新商品 -->
     <nav>
-        <div id="logo"><img src="./img/03_LOGO_Starbucks.png" alt="星巴克"></div>
+        <div id="logo">
+        <a href="#"></a><img src="./img/03_LOGO_Starbucks.png" alt="星巴克"></div>
         <div id="link">
             <a href="HOME"></a>
             <a href="美甲課程"></a>
@@ -28,23 +30,20 @@
     </nav>
           <!-- 首頁 -->
           <div id="banner">
-            <div>
-                <h1></h1>
-                標題
+            <div class="banner1">
+                <h1>凝膠美甲</h1>
                 <hr>
-                <p>我是文字</p>
+                <p>設計出屬於你的款式</p>
+            </div>
+            <div class="banner3">
+                <h1>保養指甲</h1>
+                <hr>
+                <p>有好的指甲才有好的價值</p>
             </div>
             <div>
-                <h1></h1>
-                標題
+                <h1>延甲</h1>
                 <hr>
-                <p>我是文字</p>
-            </div>
-            <div>
-                <h1></h1>
-                標題
-                <hr>
-                <p>我是文字</p>
+                <p>想要讓手修長美麗是你最好的選擇</p>
             </div>
           </div>
     <!-- 商品類型  -->
@@ -57,7 +56,7 @@
                 <p>基本手部保養</p>
                 <a href="" class="button">MORE</a>
             </div>
-            <div class="pic">
+            <div class="pic" data-aos="fade" data-aos-duration="1500" data-aos-delay="300" data-aos-offset="450">
                 <img src="./img/nail.jpg" alt="琥珀">
             </div>
         </div>
@@ -68,7 +67,7 @@
                 <p>基本手部保養</p>
                 <a href="" class="button">MORE</a>
             </div>
-            <div class="pic">
+            <div class="pic" data-aos="fade" data-aos-duration="1500" data-aos-delay="300" data-aos-offset="450">
                 <img src="./img/images.jpg" alt="貼鑽">
             </div>
         </div>
@@ -79,7 +78,7 @@
                 <p>基本手部保養</p>
                 <a href="" class="button">MORE</a>
             </div>
-            <div class="pic">
+            <div class="pic" data-aos="fade" data-aos-duration="1500" data-aos-delay="300" data-aos-offset="450">
                 <img src="./img/blue.jpg" alt="海洋">
             </div>
         </div>
@@ -87,7 +86,7 @@
     <!-- 門市資訊 -->
     <section id="info">
         <div>
-            <div class="pic">
+            <div class="pic" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="500">
                 <img src="./img/blue.jpg" alt="biue">
             </div>
             <div class="text">
@@ -98,7 +97,7 @@
             </div>
         </div>
         <div>
-            <div class="pic">
+            <div class="pic" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="500">
                 <img src="./img/images.jpg" alt="貼鑽貼鑽">
             </div>
             <div class="text">
@@ -109,7 +108,7 @@
             </div>
         </div>
         <div>
-            <div class="pic">
+            <div class="pic" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="500">
                 <img src="./img/nail.jpg" alt="琥珀">
             </div>
             <div class="text">
@@ -122,9 +121,28 @@
     </section>
 
     <!-- 其他服務 -->
-
-    <!-- 導覽 -->
-
+    <div id="service">
+        <div class="service1">
+            <img src="./img/banner.jpg" alt="">
+            <h2>生活頻道</h2>
+        </div>
+        <div class="service2">
+            <img src="./img/banner2.jpg" alt="">
+            <h2>小賣店小賣店</h2>
+        </div>
+        <div class="service3">
+            <img src="./img/blue.jpg" alt="">
+            <h2>外送</h2>
+        </div>
+        <div class="service4">
+            <img src="./img/banner2.jpg" alt="">
+            <h2>美甲用品專賣</h2>
+        </div>
+        <div class="service5">
+            <img src="./img/banner.jpg" alt="">
+            <h2>設備租借</h2>
+        </div>
+    </div>
     <!-- 頁尾 -->
  <footer>
    <div id="footer-social">
@@ -138,6 +156,7 @@
    <div id="contact">電話:0800-000-321 (服務時間:周一至周六 09:00-18:00)</div>
    <div id="copy">&copy; 2021 nail company.</div>
 </footer>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();

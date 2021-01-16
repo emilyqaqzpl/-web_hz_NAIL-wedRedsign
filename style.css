@@ -64,14 +64,32 @@ background-image: url(./img/banner1.jpg);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 
 }
-banner p {
+#banner p {
     padding: 30px;
     font-size: 32px;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
-banner hr {
+#banner hr {
     width: 80%;
     margin: 0 auto;
+    height: 5px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+#banner .slick-prev {
+    left:50px;
+    z-index: 2;
+    transform: scale(1.5);
+}
+#banner .slick-next {
+    right: 50px;
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+#banner .slick-dots {
+    bottom: 25px;
 }
 
 #products {
@@ -84,8 +102,8 @@ banner hr {
     margin-top: 20px;
 }
 #products .pic img {
-    width: 80%;
-    height:550px;
+    width: 100%;
+    height: 350px;
     object-fit: cover;
 }
 #products .text {
@@ -105,13 +123,8 @@ padding: 30px 0;
     grid-template-columns: 60% 40%;
 }
 
-
-#products > div:nth-child(even) {
-    background: #bb8a6e;
-
-}
 #products > div:nth-child(2) .text {
-    grid-area: text;
+ grid-area: text;
 }
 
 #products > div:nth-child(2) .pic {
@@ -136,7 +149,11 @@ padding: 30px 0;
   width: 1280px;
   margin: 50px auto 0;
  }
-
+#info .pic img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
 #info .text {
  padding: 0 10px;
 }
@@ -151,14 +168,34 @@ padding: 30px 0;
 #service {
     width: 1280px;
     margin: 0 auto;
+    margin-top: 100px;
 }
-#serice img {
+ #service div:focus {
+    outline: none;
+}
+#service img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transform: 0.5s;
 }
-footer {
+
+#service img:hover {
+    border-radius: 15px;
+}
+#service h2 {
+    text-align: center;
+    margin: 15px;
+    color: #ecc89f;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/* 頁尾 */
+
+#footer {
     background: saddlebrown;
     margin-top: 100px;
     padding: 50px;
@@ -171,10 +208,10 @@ footer {
     padding: 30px 0 20PX;
 }
 
-#starbucks {
+#starbucks img {
     transition: 0.5s;
 }
-#starbucks img {
+#starbucks img:hover {
     transform: scale(1.2);
 }
 
@@ -198,6 +235,6 @@ transition: 0.5s;
     padding: 10px 0;
 }
 #copy {
-    color: #bb8a6e);
+    color: #bb8a6e;
     font-size: 8px;
 }
